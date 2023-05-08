@@ -17,7 +17,7 @@
       '';
     };
 
-    nixosModules.x86_64-linux.probe-rs-rules = { config, pkgs, lib, ... }:
+    nixosModules.default = { config, pkgs, lib, ... }:
     let
       inherit (lib) mkOption mkIf types;
       cfg = config.hardware.probe-rs;
