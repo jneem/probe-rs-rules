@@ -13,7 +13,7 @@ inputs.probe-rs-rules.url = "github:jneem/probe-rs-rules";
 
 Then import the module and set the `hardware.probe-rs.enable` option:
 
-```
+```nix
 imports = [
   probe-rs-rules.nixosModules.${pkgs.system}.default
   # ...and whatever other inputs you have.
